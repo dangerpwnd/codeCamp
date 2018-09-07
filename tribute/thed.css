@@ -24,15 +24,32 @@ h2,h3,h6 {
   font-family: 'Chartz', cursive;
 }
 
-#img-dv {
 
+
+#container {
+  overflow: hidden;
 }
 
-#image {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  margin: 0 auto;
+@keyframes slide {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  100% {
+    transform: translate3d(-1692px,0,0); /* Image width */
+  }
+}
+
+#slider{
+  height: 500px;
+  width: 5076px;
+  background: url('https://tonedeaf.com.au/wp-content/uploads/2018/05/tenaciousd.jpg')
+repeat-x;
+animation: slide 60s linear infinite;
+}
+/* Animation for sliding background  */
+
+#img-div {
+
 }
 
 #img-caption {
@@ -40,8 +57,16 @@ h2,h3,h6 {
 
 }
 
+#image {
+  display:block;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+}
+
 #tribute-info {
   font-family: 'Indie Flower', cursive;
+  font-size: 20px;
 }
 
 #tribute-info h2 {
@@ -51,4 +76,11 @@ h2,h3,h6 {
 #tribute-link {
   font-size: 2em;
 
+}
+#fans {
+  font-size: 25px;
+}
+li {
+  display: list-item;
+  list-style-position: inside;
 }
