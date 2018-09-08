@@ -3,18 +3,28 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="survey.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <title>Survey for testing</title>
   </head>
   <body>
     <main>
       <h1 id="title">World Class Survey</h1>
       <div class="container">
-        <p id="description">This survey asks deep questions that even the best known philosophers couldn't crack</p>
+        <p id="description">This survey asks deep questions</p>
         <p>Only the luckiest people get to take this survey!</p>
         <p>You must really be something</p>
         <br>
         <form id="survey-form">
-
+          Enter your name if you dare: <br>
+          <input id="name" type="text" placeholder="how dare you" required><br>
+          Enter your business email for scores of spam:<br>
+          <input id="email" type="text" placeholder="for email spam" required><br>
+          How old are you really?<br>
+          <input id="number" type="number" placeholder="numbers only if you don't mind" required min="1" max="125"><br>
+          <button>Submit</button>
+          <!--Left off on Story #6  -->
+          <!--Look into https://html.com/javascript/popup-windows/  -->
+          <!--  -->
         </form>
       </div>
     </main>

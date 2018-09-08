@@ -4,16 +4,16 @@
 }
 
 body {
-  background-color: #fa6d29;
+  background-color: #546A7B;
   /*Change the palette  */
 }
 
 main {
-
+  font-family: 'Acme', sans-serif;
 }
 
 #title {
-  color: blue;
+  color: #488B49;
   text-align: center;
 }
 
@@ -22,6 +22,16 @@ main {
   height: 80%;
   width: 80%;
   opacity: 0.8;
-  background-color: #1c4e8a;
+  background-color: #5E2BFF;
   border-radius: 5px;
+  color: #F7F6C5;
+}
+/*Css attributes for incorrect entries  */
+input:invalid {
+  border: 2px dashed red;
+}
+
+/*Css attributes for correct entries  */
+input:valid {
+  border: 2px solid purple;
 }
