@@ -15,18 +15,38 @@
         <p>You must really be something</p>
         <br>
         <form id="survey-form">
-          Enter your name if you dare: <br>
-          <input id="name" type="text" placeholder="how dare you" required><br>
-          Enter your business email for scores of spam:<br>
-          <input id="email" type="text" placeholder="for email spam" required><br>
-          How old are you really?<br>
-          <input id="number" type="number" placeholder="numbers only if you don't mind" required min="1" max="125"><br>
-          <button>Submit</button>
-          <!--Left off on Story #6  -->
+          <label id="name-label">Enter your name if you dare:</label> <br>
+          <input id="name" type="text" placeholder="how dare you" required /><br>
+          <label id="email-label">Enter your business email for scores of spam:</label><br>
+          <input id="email" type="email" placeholder="for email spam" required /><br>
+          <label id="number-label">How old are you really?</label><br>
+          <input id="number" type="number" placeholder="numbers only if you don't mind" required min="1" max="125" /><br>
+          <label id="dropdown-label">What is the answer to life, the universe, and everthing?</label><br>
+          <select id="dropdown">
+            <option value="Zaphod">Zaphod's Theory</option>
+            <option value="Dolphins">Feed the dolphins fish</option>
+            <option value="42">42</option>
+            <option value="Vogon">Ode to a Small Lump of Green Putty I Found in My Armpit One Midsummer Morning</option>
+            <option value="Marvin">Never give robots feelings</option>
+          </select><br>
+          <label id="button-label">Is true beauty subjective or objective?</label><br>
+          <input type="radio" name="choice" value="Subjective" />Subjective<br>
+          <input type="radio" name="choice" value="Objective" />Objective<br>
+          <label id="checkbox-label">Is there a perfect life?</label><br>
+          <input type="checkbox" value="Yes" name="Yes" />Yes<br>
+          <input type="checkbox" value="No" name="No" />No<br>
+          <input type="checkbox" value="Subjective" name="Subjective" />Perfect is subjective so possibly<br>
+          <label id="textbox-label">Explain your choices</label><br>
+          <input type="text" placeholder="Enter your deets" /><br>
+          <button type"submit">Submit</button>
+
           <!--Look into https://html.com/javascript/popup-windows/  -->
           <!--  -->
         </form>
       </div>
     </main>
+    <footer>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+    </footer>
   </body>
 </html>
