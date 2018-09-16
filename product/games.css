@@ -16,9 +16,32 @@
 .video {
   width: var(--video-frame-size, 500px;)
   height: var(--video-frame-size, 500px;)
+  margin: 0 auto;
 }
 
 .header {
   background-color: red;
   color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-link {
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+  padding-bottom: 10%;
 }
