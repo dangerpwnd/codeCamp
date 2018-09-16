@@ -17,3 +17,8 @@
   width: var(--video-frame-size, 500px;)
   height: var(--video-frame-size, 500px;)
 }
+
+.header {
+  background-color: red;
+  color: yellow;
+}
