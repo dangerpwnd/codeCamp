@@ -14,8 +14,9 @@
 }
 
 .video {
-  width: var(--video-frame-size, 500px;)
-  height: var(--video-frame-size, 500px;)
+  width: var(--video-frame-size, 500px;);
+  height: var(--video-frame-size, 500px;);
+  display: block;
   margin: 0 auto;
 }
 
@@ -47,7 +48,7 @@
 }
 
 #container {
-  margin: 0 auto;
   padding-top: 5%;
   padding-bottom: 5%;
+  align: center;
 }
