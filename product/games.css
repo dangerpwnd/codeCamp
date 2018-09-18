@@ -19,29 +19,35 @@
   margin: 0 auto;
 }
 
-.header {
+#header {
   background-color: red;
-  color: yellow;
   display: flex;
   flex-direction: column;
 }
 
-.nav-bar {
+#header img {
+  width: 50%;
+  height: 50%;
+}
+
+#nav-bar {
   display:flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .nav-link {
-  margin: 0 auto;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   border: 1px solid black;
   border-radius: 5px;
   font-size: 20px;
   font-family: 'Press Start 2P', cursive;
+  background-color: yellow;
 }
 
-.container {
-  padding-bottom: 10%;
+#container {
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
