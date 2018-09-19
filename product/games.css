@@ -52,3 +52,38 @@
   padding-bottom: 5%;
   align: center;
 }
+
+#flex-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+#product {
+  height: 300px;
+  border: 1px solid black;
+}
+
+#about {
+  height: 250px;
+  border: 1px solid black;
+}
+
+#hardware {
+  height: 425px;
+  width: 50%;
+  border: 1px solid black;
+}
+
+#software {
+  height: 250px;
+  width: 50%;
+  border: 1px solid black;
+}
+
+#contact {
+  height: 300px;
+  border: 1px solid black;
+}
