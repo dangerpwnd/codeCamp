@@ -4,18 +4,18 @@
 }
 
 :root {
-  --video-frame-size: 500px;
+  --retro-width: 50%;
+  --retro-height: 50%;
 }
 
 @media (max-width: 400px){
   :root {
-    --video-frame-size: 350px;
+    --retro-width: 30%;
+    --retro-height: 30%;
   }
 }
 
 .video {
-  width: var(--video-frame-size, 500px;);
-  height: var(--video-frame-size, 500px;);
   display: block;
   margin: 0 auto;
 }
@@ -27,18 +27,21 @@
 }
 
 #header img {
-  width: 50%;
-  height: 50%;
+  width: var(--retro-width);
+  height: var(--retro-height);
+  margin-top: 3%;
 }
 
 #nav-bar {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  /* position: fixed; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ width: 100%;
 }
 
 .nav-link {
+  display: inline-block;
   padding-left: 2%;
   padding-right: 2%;
   border: 1px solid black;
@@ -47,6 +50,7 @@
   font-family: 'Press Start 2P', cursive;
   background-color: yellow;
 }
+
 
 main {
   background-color: red;
@@ -62,18 +66,19 @@ main {
   flex-direction: column;
   width: auto;
   justify-content:space-between;
-  background-color: #FFCC00;
 }
 
 #product {
   height: 300px;
   border: 1px solid black;
-  margin-bottom: 5%;
+  margin-bottom:5%;
+  background-color: #FFCC00;
 }
 
 #about {
   height: 300px;
   border: 1px solid black;
+  background-color: #FFCC00;
 }
 
 .flex-stuff {
