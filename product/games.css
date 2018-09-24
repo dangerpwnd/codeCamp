@@ -115,6 +115,21 @@ main {
   border: 1px solid black;
 }
 
+#hardware p {
+  margin-top: 3%;
+}
+
+#hardware img {
+  margin-left: 1%;
+  display: inline-block;
+}
+
+ul li {
+  display:list-item;
+  list-style-type: circle;
+  margin-left: 1rem;
+}
+
 #software {
   height: 425px;
   width: 50%;
