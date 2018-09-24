@@ -4,6 +4,7 @@
 }
 
 h2 {
+  margin-top: 1%;
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -113,6 +114,7 @@ main {
   height: 425px;
   width: 50%;
   border: 1px solid black;
+  overflow: hidden;
 }
 
 #hardware p {
@@ -120,11 +122,12 @@ main {
 }
 
 #hardware img {
-  margin-left: 1%;
-  display: inline-block;
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
 }
 
-ul li {
+#hardware ul {
   display:list-item;
   list-style-type: circle;
   margin-left: 1rem;
@@ -136,8 +139,25 @@ ul li {
   border: 1px solid black;
 }
 
+#software p {
+  margin-top: 3%;
+  text-align: right;
+}
+
+#software ul {
+  text-align: right;
+  direction:rtl;
+  display:list-item;
+  list-style-type: circle;
+  margin-right: 1rem;
+}
+
 .contact {
   height: 300px;
   border: 1px solid black;
   background-color: #FFCC00;
+}
+
+.contact form {
+  margin-top: 1%;
 }
