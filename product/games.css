@@ -6,6 +6,7 @@
 h2 {
   margin-top: 1%;
   font-family: 'Press Start 2P', cursive;
+  text-align: center;
 }
 
 :root {
@@ -69,8 +70,19 @@ main {
 .flex-container {
   display: flex;
   flex-direction: column;
-  width: auto;
-  justify-content:space-between;
+  width: 100%;
+}
+
+.flex-pics {
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.flex-pics img {
+  max-height:  70%;
+  max-width: 70%;
+
 }
 
 #product {
@@ -152,6 +164,11 @@ main {
   margin-right: 1rem;
 }
 
+#software img {
+  margin-top: 2%;
+  float: right;
+}
+
 .contact {
   height: 300px;
   border: 1px solid black;
@@ -160,4 +177,5 @@ main {
 
 .contact form {
   margin-top: 1%;
+  text-align: center;
 }
