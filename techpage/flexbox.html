@@ -12,11 +12,11 @@
     <div id="flex-parent">
     <div id="main-left-col">
       <nav id="navbar">
-        <header>All you need to know about Flexbox</header>
+        <header>Index</header>
         <ul>
           <li class="nav-link"><a href="#Intro">What is a flexbox</a></li>
           <li class="nav-link"><a href="#using_flex">It can do what?</a></li>
-          <li class="nav-link"><a href="#parent_elements">Let's talk about parents</a></li>
+          <li class="nav-link"><a href="#more_properties">Let's talk about parents</a></li>
           <li class="nav-link"><a href="#child_elements">Children everywhere</a></li>
           <li class="nav-link"><a href="#all_together_now">Bringing it all together</a></li>
       </nav>
@@ -24,30 +24,31 @@
     <div id="main-right-col">
       <section class="main-section">
         <header id="Intro">What is a flexbox?</header>
-        <p>This intro is a perfect rundown of the css layout element, flexbox.</p>
-        <p>
-        <p>Exaplaining example code</p>
-        <code></code>
+        <p>This intro is a glimpse at the css layout element, flexbox.</p>
+        <p>Since it's first working draft in 2009, it's developed into W3C Candidate Recommendation and is still being actively updated.</p>
       </section>
       <section class="main-section">
         <header id="using_flex">It can do what?</header>
         <p>Using flex is as easy as adding this code to the parent container:</p>
         <code>display:flex;</code>
-        <p></p>
+		<p>This new parent container will hold all of your flex-items</p>
+        <p>The flexbox container has two axes: a main axis and a cross axis</p>
+		<img class="flexpics" src="https://cdn-images-1.medium.com/max/1600/1*_Ruy6jFG7gUpSf76IUcJTQ.png" alt="2 axes of flexbox" />
+		<p><code>flex-direction</code> is the property that will arrange the items along the main axis. By default, these items will be displayed left to right</p>
       </section>
       <section class="main-section">
-        <header id="parent_elements">Let's talk about parents</header>
-        <p>Now when 2 elements come together...you end up with a parent and a child.</p>
-        <p></p>
+        <header id="more_properties">Let's talk about properties</header>
+        <p>A few additional properties to dive in to include the following:</p>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><code>flex-wrap</code></li>
+          <li><code>flex-flow</code></li>
+          <li><code>justify-content</code></li>
+		  <li><code>align-items</code></li>
         </ul>
         <code></code>
       </section>
       <section class="main-section">
-        <header id="child_elements">Children everywhere</h4>
+        <header id="child_elements">Children everywhere</header>
         <p>These child elements are going to be shaped partial by the parent, but are also going to be their own special little snow flake.</p>
         <p></p>
         <ul>
