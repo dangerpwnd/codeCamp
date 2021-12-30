@@ -10,58 +10,73 @@
         <nav id="navbar">
           <header>Flex Navigation</header>
           <ul>
-            <li class="nav-link"><a href="#What_is_a_flexbox">What is a flexbox</a></li>
-            <li class="nav-link"><a href="#It_can_do_what">It can do what</a></li>
-            <li class="nav-link"><a href="#Some_Properties">Some Properties</a></li>
-            <li class="nav-link"><a href="#Children_everywhere">Children everywhere</a></li>
-            <li class="nav-link"><a href="#Plays_well_with_others">Plays well with others</a></li>
+            <li><a class="nav-link" href="#What_is_a_flexbox">What is a flexbox</a></li>
+            <li><a class="nav-link" href="#It_can_do_what">It can do what</a></li>
+            <li><a class="nav-link" href="#Some_Properties">Some Properties</a></li>
+            <li><a class="nav-link" href="#Children_everywhere">Children everywhere</a></li>
+            <li><a class="nav-link" href="#Plays_well_with_others">Plays well with others</a></li>
         </nav>
       </div>
       <div id="main-right-col">
-        <section class="main-section">
-          <header id="What_is_a_flexbox">What is a flexbox</header>
-          <p>This intro is a glimpse at the css layout element, flexbox.</p>
-          <p>Since it's first working draft in 2009, it's developed into W3C Candidate Recommendation and is still being actively updated.</p>
-        </section>
-        <section class="main-section">
-          <header id="It_can_do_what">It can do what</header>
-          <p>Using flex is as easy as adding this code to the parent container:</p>
-          <code>display:flex;</code>
-          <p>This new parent container will hold all of your flex-items.</p>
-          <p>The flexbox container has two axes: a main axis and a cross axis.</p>
-          <img class="flexpics" src="https://cdn-images-1.medium.com/max/1600/1*_Ruy6jFG7gUpSf76IUcJTQ.png" alt="2 axes of flexbox" />
-          <code>flex-direction:column</code>
-          <p>The flex-direction property that will arrange the items along the main axis. By default, these items will be displayed left to right.</p>
-        </section>
-        <section class="main-section">
-          <header id="Some_Properties">Some Properties</header>
-          <p>A few additional properties to dive in to include the following:</p>
-            <code>flex-wrap: wrap</code>
-            <p>By default all flex items will be one line, with flex-wrap you can allow items to wrap as needed.</p>
-            <li><code>flex-flow: column wrap</code>A shorthand for flex-direction and flex-wrap.</li>
-            <li><code>justify-content:center</code>Defines alignment along the main axis. Flex-start(similar to float:left) is the default.</li>
-            <li><code>align-items:center</code>Defines aligment along the cross axis. Stretch(fill) is the default.</li>
-          </ul>
-        </section>
-        <section class="main-section">
-          <header id="Children_everywhere">Children everywhere</header>
-          <p>These child elements are going to be shaped partial by the parent, but are also going to be their own special little snow flake.</p>
-          <p>These child properties can customize individual child elements:</p>
+        <section class="main-section" id="What_is_a_flexbox">
+          <header>What is a flexbox</header>
           <ul>
-            <li><code>flex-grow: 2</code>Defines how much space to take up in flex container.</li>
-            <li><code>flex-shrink: 2</code>Defines how much flex item should shrink if necessary.</li>
-            <li><code>flex-basis: 2</code>Defines default size of an element before the remaining space is distributed.</li>
-            <li><code>flex: 5</code>A shorthand for flex-grow, flex-shrink, and flex-basis.</li>
+            <li><p>This intro is a glimpse at the css layout element, flexbox.</p></li>
+            <li><p>Since it's first working draft in 2009, it's developed into W3C Candidate Recommendation and is still being actively updated.</p></li>
           </ul>
         </section>
-        <section class="main-section">
-          <header id="Plays_well_with_others">Plays well with others</header>
-          <p>While some advocate Flexbox over Grid, or vise-versa, the truth is they work well together. A good implementation would be as follows:</p>
-          <code>.main-container { display: grid; grid-template-rows: repeat(2, 1fr); } .child-container { display: flex; justify-content: center;}
-          </code>
+        <section class="main-section"  id="It_can_do_what">
+          <header>It can do what</header>
+          <ul>
+            <li><p>Using flex is as easy as adding this code to the parent container:</p></li>
+            <li><code>display:flex;</code></li>
+            <li><p>This new parent container will hold all of your flex-items.</p></li>
+            <li><p>The flexbox container has two axes: a main axis and a cross axis.</p></li>
+          </ul>
+          <img class="flexpics" src="https://cdn-images-1.medium.com/max/1600/1*_Ruy6jFG7gUpSf76IUcJTQ.png" alt="2 axes of flexbox" />
+          <ul>
+            <li><code>flex-direction:column</code></li>
+            <li><p>The flex-direction property that will arrange the items along the main axis. By default, these items will be displayed left to right.</p></li> 
+        </section>
+        <section class="main-section" id="Some_Properties">
+          <header>Some Properties</header>
+          <ul>
+            <li><p>A few additional properties to dive in to include the following:</p></li>
+            <li><code>flex-wrap: wrap</code></li>
+            <li><p>By default all flex items will be one line, with flex-wrap you can allow items to wrap as needed.</p></li>
+            <li><code>flex-flow: column wrap</code></li>
+            <li><p>A shorthand for flex-direction and flex-wrap.</p></li>
+            <li><code>justify-content:center</code></li>
+            <li><p>Defines alignment along the main axis. Flex-start(similar to float:left) is the default.</p></li>
+          <li><code>align-items:center</code></li>
+          <li><p>Defines aligment along the cross axis. Stretch(fill) is the default.</p></li>
+          </ul>
+        </section>
+        <section class="main-section" id="Children_everywhere">
+          <header>Children everywhere</header>
+          <ul>
+            <li><p>These child elements are going to be shaped partial by the parent, but are also going to be their own special little snow flake.</p></li>
+            <li><p>These child properties can customize individual child elements:</p></li>
+            <li><code>flex-grow: 2</code></li>
+            <li><p>Defines how much space to take up in flex container.</p></li>
+            <li><code>flex-shrink: 2</code></li>
+            <li><p>>Defines how much flex item should shrink if necessary.>Defines how much flex item should shrink if necessary.</p></li>
+            <li><code>flex-basis: 2</code></li>
+            <li><p>Defines default size of an element before the remaining space is distributed.</p></li>
+            <li><code>flex: 5</code></li>
+            <li><p>A shorthand for flex-grow, flex-shrink, and flex-basis.</p></li>
+          </ul>
+        </section>
+        <section class="main-section" id="Plays_well_with_others">
+          <header>Plays well with others</header>
+          <ul>
+            <li><p>While some advocate Flexbox over Grid, or vise-versa, the truth is they work well together. A good implementation would be as follows:</p></li>
+            <li><code>.main-container { display: grid; grid-template-rows: repeat(2, 1fr); } .child-container { display: flex; justify-content: center;}</code></li>
         </section>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" />
   </main>
   <footer>
   </footer>
 </html>
+
